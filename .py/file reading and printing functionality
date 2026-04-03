@@ -1,0 +1,10 @@
+with open ("speed_test.txt","rb") as file:
+    print(type(file))
+
+
+
+    data = file.read(90)
+    print("printing 90 characters: ",data)
+    print("Reading corsor :",file.tell())
+    data1 = file.read(94)
+    print("printing 94 characters:",data1)
