@@ -1,0 +1,17 @@
+
+f = open("speed_test.txt","rb")
+
+print("The File Name Is:",f.name)
+f.seek(338,1)
+line = f.read()
+print("File Contents:",line)
+f.close()
+
+
+file = open ("speed_test.txt","r")
+
+print(file.tell())
+file.seek(8)
+print(file.tell())
+data = file.read()
+print(data)
